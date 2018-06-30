@@ -21,7 +21,9 @@ return [
     '__dependencies' => [
         'required' => [
             [
-                'cli' => null,
+                'cli' => null
+            ],
+            [
                 'lib-compress' => null
             ]
         ],
