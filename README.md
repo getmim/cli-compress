@@ -13,7 +13,7 @@ mim app install cli-compress
 ## Penggunaan
 
 ```bash
-mim compress [all|gzip|brotli|webp] [file[ ...]]
+mim compress (all|gzip|brotli|webp) (file[ ...])
 
 # kompres gzip semua file di folder ini
 mim compress gzip ./*
