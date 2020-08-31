@@ -7,7 +7,7 @@
 
 return [
     '__name' => 'cli-compress',
-    '__version' => '0.0.1',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getphun/cli-compress.git',
     '__license' => 'MIT',
     '__author' => [
@@ -48,7 +48,7 @@ return [
                 'path' => [
                     'value' => 'compress (:type) (:files)',
                     'params' => [
-                    	'type' => ['all', 'brotli', 'gzip', 'webp'],
+                    	'type' => ['all', 'brotli', 'gzip', 'webp', 'jp2'],
                     	'files' => 'rest'
                     ]
                 ],
@@ -59,7 +59,7 @@ return [
     
     'cli' => [
     	'autocomplete' => [
-    		'!^compress (all|gzip|webp|brotli)( .*)?$!' => [
+    		'!^compress (all|gzip|webp|brotli|jp2)( .*)?$!' => [
     			'priority' => 7,
     			'handler' => [
                     'class' => 'CliCompress\\Library\\Autocomplete',
