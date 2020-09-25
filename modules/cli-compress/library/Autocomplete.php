@@ -17,7 +17,7 @@ class Autocomplete extends \Cli\Autocomplete
 
 	static function command(array $args): string{
 		$farg = $args[1] ?? null;
-		$result = ['all', 'brotli', 'gzip', 'webp', 'jp2'];
+		$result = ['all', 'brotli', 'gzip', 'webp'];
 
 		if(!$farg)
 			return trim(implode(' ', $result));
